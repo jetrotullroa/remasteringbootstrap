@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Tutorials</title>
-    <link rel="stylesheet" href="/css/main.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/css/bootstrapcss/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrapcss/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
 
@@ -18,8 +18,37 @@
   <body>
 
     <div class="container" id="main">
-      <div class="navbar navbar-fixed-top">
-
+      <div class="navbar navbar-fixed-top" id="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="index.html">
+              <img src="images/logo.png" alt="Brand Logo">
+            </a>
+          </div>
+          <div class="nav-collapse collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+            </ul>
+            <form action="" class="navbar-form pull-left">
+              <input type="text" class="form-control" placeholder="Search this">
+              <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+            <ul class="nav navbar pull-right">
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-user"> My Account</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div> <!-- end NAVBAR -->
 
       <div class="carousel-slide" id="myCarousel">
@@ -41,7 +70,7 @@
       <div class="row" id="moreInfo">
 
       </div><!-- end MORE info -->
-      
+
       <div class="row" id="moreCourses">
 
       </div><!-- end MORE COURSES-->
@@ -56,6 +85,6 @@
     <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="/js/bootstrapjs/bootstrap.min.js"></script>
+    <script src="js/bootstrapjs/bootstrap.min.js"></script>
   </body>
 </html>
